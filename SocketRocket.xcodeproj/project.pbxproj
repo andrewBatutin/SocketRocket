@@ -186,7 +186,7 @@
 		81E8A6A31D4C41E000916C7E /* SocketRocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81D6478D1D2CA78800690609 /* SocketRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4978FB81EE7E4EF00AE3F07 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A12CD51451231B00C1D980 /* CFNetwork.framework */; };
 		A4978FBA1EE7E54000AE3F07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FB91EE7E54000AE3F07 /* UIKit.framework */; };
-		A4978FBC1EE7E69300AE3F07 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FBB1EE7E69300AE3F07 /* libicucore.tbd */; };
+		A4978FBE1EE7EF2400AE3F07 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FBD1EE7EF2400AE3F07 /* libicucore.A.dylib */; };
 		F5391CBE1D2F4B4700606A81 /* SRSIMDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */; };
 		F5391CBF1D2F4B4700606A81 /* SRSIMDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */; };
 		F5391CC01D2F4B4700606A81 /* SRSIMDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */; };
@@ -328,6 +328,7 @@
 		81E8A69A1D4C417A00916C7E /* TestChat-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TestChat-iOS.xcconfig"; sourceTree = "<group>"; };
 		A4978FB91EE7E54000AE3F07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A4978FBB1EE7E69300AE3F07 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
+		A4978FBD1EE7EF2400AE3F07 /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = ../../../../usr/lib/libicucore.A.dylib; sourceTree = "<group>"; };
 		F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSIMDHelpers.h; sourceTree = "<group>"; };
 		F5391CBD1D2F4B4700606A81 /* SRSIMDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSIMDHelpers.m; sourceTree = "<group>"; };
 		F61A0DC71625F44D00365EBD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "en.lproj/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -379,7 +380,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4978FBC1EE7E69300AE3F07 /* libicucore.tbd in Frameworks */,
+				A4978FBE1EE7EF2400AE3F07 /* libicucore.A.dylib in Frameworks */,
 				A4978FBA1EE7E54000AE3F07 /* UIKit.framework in Frameworks */,
 				A4978FB81EE7E4EF00AE3F07 /* CFNetwork.framework in Frameworks */,
 				81D647741D2CA78800690609 /* Security.framework in Frameworks */,
@@ -702,6 +703,7 @@
 		F6B2082F1450F597009315AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4978FBD1EE7EF2400AE3F07 /* libicucore.A.dylib */,
 				A4978FBB1EE7E69300AE3F07 /* libicucore.tbd */,
 				A4978FB91EE7E54000AE3F07 /* UIKit.framework */,
 				81AFCD651D4C431C00B3AFC9 /* libicucore.tbd */,
