@@ -184,6 +184,9 @@
 		81DCD1241D2D9235002501A2 /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C68D0D1D2CBFA800A1D005 /* libicucore.A.tbd */; };
 		81E8A6A21D4C41E000916C7E /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D6478D1D2CA78800690609 /* SocketRocket.framework */; };
 		81E8A6A31D4C41E000916C7E /* SocketRocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81D6478D1D2CA78800690609 /* SocketRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4978FB81EE7E4EF00AE3F07 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A12CD51451231B00C1D980 /* CFNetwork.framework */; };
+		A4978FBA1EE7E54000AE3F07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FB91EE7E54000AE3F07 /* UIKit.framework */; };
+		A4978FBC1EE7E69300AE3F07 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FBB1EE7E69300AE3F07 /* libicucore.tbd */; };
 		F5391CBE1D2F4B4700606A81 /* SRSIMDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */; };
 		F5391CBF1D2F4B4700606A81 /* SRSIMDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */; };
 		F5391CC01D2F4B4700606A81 /* SRSIMDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */; };
@@ -323,6 +326,8 @@
 		81D6475D1D2CA6A100690609 /* SocketRocketTests-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SocketRocketTests-iOS.xcconfig"; sourceTree = "<group>"; };
 		81D6478D1D2CA78800690609 /* SocketRocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SocketRocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E8A69A1D4C417A00916C7E /* TestChat-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "TestChat-iOS.xcconfig"; sourceTree = "<group>"; };
+		A4978FB91EE7E54000AE3F07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A4978FBB1EE7E69300AE3F07 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
 		F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSIMDHelpers.h; sourceTree = "<group>"; };
 		F5391CBD1D2F4B4700606A81 /* SRSIMDHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSIMDHelpers.m; sourceTree = "<group>"; };
 		F61A0DC71625F44D00365EBD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "en.lproj/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -374,6 +379,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4978FBC1EE7E69300AE3F07 /* libicucore.tbd in Frameworks */,
+				A4978FBA1EE7E54000AE3F07 /* UIKit.framework in Frameworks */,
+				A4978FB81EE7E4EF00AE3F07 /* CFNetwork.framework in Frameworks */,
 				81D647741D2CA78800690609 /* Security.framework in Frameworks */,
 				81D647751D2CA78800690609 /* Foundation.framework in Frameworks */,
 			);
@@ -694,6 +702,8 @@
 		F6B2082F1450F597009315AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4978FBB1EE7E69300AE3F07 /* libicucore.tbd */,
+				A4978FB91EE7E54000AE3F07 /* UIKit.framework */,
 				81AFCD651D4C431C00B3AFC9 /* libicucore.tbd */,
 				81C68CF41D2CBEBD00A1D005 /* macOS */,
 				81C68CFD1D2CBF1800A1D005 /* tvOS */,
@@ -1174,6 +1184,7 @@
 			baseConfigurationReference = 81D647591D2CA6A100690609 /* SocketRocket-iOS-Dynamic.xcconfig */;
 			buildSettings = {
 				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1182,6 +1193,7 @@
 			baseConfigurationReference = 81D647591D2CA6A100690609 /* SocketRocket-iOS-Dynamic.xcconfig */;
 			buildSettings = {
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -1190,6 +1202,7 @@
 			baseConfigurationReference = 81D6475C1D2CA6A100690609 /* SocketRocket-tvOS.xcconfig */;
 			buildSettings = {
 				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -1199,6 +1212,7 @@
 			baseConfigurationReference = 81D6475C1D2CA6A100690609 /* SocketRocket-tvOS.xcconfig */;
 			buildSettings = {
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
@@ -1207,6 +1221,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D6475A1D2CA6A100690609 /* SocketRocket-iOS.xcconfig */;
 			buildSettings = {
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1214,6 +1229,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D6475A1D2CA6A100690609 /* SocketRocket-iOS.xcconfig */;
 			buildSettings = {
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -1221,6 +1237,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81E8A69A1D4C417A00916C7E /* TestChat-iOS.xcconfig */;
 			buildSettings = {
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1228,6 +1245,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81E8A69A1D4C417A00916C7E /* TestChat-iOS.xcconfig */;
 			buildSettings = {
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -1251,6 +1269,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D647561D2CA6A100690609 /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 			};
 			name = Debug;
 		};
@@ -1258,6 +1277,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81D647571D2CA6A100690609 /* Release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 			};
 			name = Release;
 		};
