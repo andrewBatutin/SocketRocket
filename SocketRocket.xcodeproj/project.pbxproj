@@ -183,6 +183,7 @@
 		81DCD1241D2D9235002501A2 /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C68D0D1D2CBFA800A1D005 /* libicucore.A.tbd */; };
 		81E8A6A21D4C41E000916C7E /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D6478D1D2CA78800690609 /* SocketRocket.framework */; };
 		81E8A6A31D4C41E000916C7E /* SocketRocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81D6478D1D2CA78800690609 /* SocketRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A43140191EE7FAA200B16BE8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FBB1EE7E69300AE3F07 /* libicucore.tbd */; };
 		A4978FB81EE7E4EF00AE3F07 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A12CD51451231B00C1D980 /* CFNetwork.framework */; };
 		A4978FBA1EE7E54000AE3F07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FB91EE7E54000AE3F07 /* UIKit.framework */; };
 		F5391CBE1D2F4B4700606A81 /* SRSIMDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */; };
@@ -357,6 +358,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43140191EE7FAA200B16BE8 /* libicucore.tbd in Frameworks */,
 				81C68CD41D2CBE0A00A1D005 /* CFNetwork.framework in Frameworks */,
 				2D4227831BB436B1000C1A6C /* Security.framework in Frameworks */,
 				2D4227801BB43693000C1A6C /* Foundation.framework in Frameworks */,
