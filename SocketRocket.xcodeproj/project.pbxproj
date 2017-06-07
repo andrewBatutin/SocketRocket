@@ -130,7 +130,6 @@
 		81C68CF11D2CBE9F00A1D005 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C68CF01D2CBE9F00A1D005 /* libicucore.tbd */; };
 		81C68CF61D2CBED100A1D005 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A12CD3145122FC00C1D980 /* Security.framework */; };
 		81C68D071D2CBF6A00A1D005 /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C68D061D2CBF6A00A1D005 /* libicucore.A.tbd */; };
-		81C68D0E1D2CBFA800A1D005 /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C68D0D1D2CBFA800A1D005 /* libicucore.A.tbd */; };
 		81CD05D81CEEC47300497F47 /* NSURLRequest+SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 81CD05D51CEEC47300497F47 /* NSURLRequest+SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81CD05D91CEEC47300497F47 /* NSURLRequest+SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 81CD05D51CEEC47300497F47 /* NSURLRequest+SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		81CD05DA1CEEC47300497F47 /* NSURLRequest+SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 81CD05D51CEEC47300497F47 /* NSURLRequest+SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -186,7 +185,8 @@
 		81E8A6A31D4C41E000916C7E /* SocketRocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81D6478D1D2CA78800690609 /* SocketRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4978FB81EE7E4EF00AE3F07 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A12CD51451231B00C1D980 /* CFNetwork.framework */; };
 		A4978FBA1EE7E54000AE3F07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FB91EE7E54000AE3F07 /* UIKit.framework */; };
-		A4978FBE1EE7EF2400AE3F07 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FBD1EE7EF2400AE3F07 /* libicucore.A.dylib */; };
+		A4978FBF1EE7F12A00AE3F07 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FBB1EE7E69300AE3F07 /* libicucore.tbd */; };
+		A4978FC01EE7F13400AE3F07 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A4978FBB1EE7E69300AE3F07 /* libicucore.tbd */; };
 		F5391CBE1D2F4B4700606A81 /* SRSIMDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */; };
 		F5391CBF1D2F4B4700606A81 /* SRSIMDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */; };
 		F5391CC01D2F4B4700606A81 /* SRSIMDHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F5391CBC1D2F4B4700606A81 /* SRSIMDHelpers.h */; };
@@ -358,7 +358,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81C68D0E1D2CBFA800A1D005 /* libicucore.A.tbd in Frameworks */,
+				A4978FBF1EE7F12A00AE3F07 /* libicucore.tbd in Frameworks */,
 				81C68CD41D2CBE0A00A1D005 /* CFNetwork.framework in Frameworks */,
 				2D4227831BB436B1000C1A6C /* Security.framework in Frameworks */,
 				2D4227801BB43693000C1A6C /* Foundation.framework in Frameworks */,
@@ -380,7 +380,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4978FBE1EE7EF2400AE3F07 /* libicucore.A.dylib in Frameworks */,
+				A4978FC01EE7F13400AE3F07 /* libicucore.tbd in Frameworks */,
 				A4978FBA1EE7E54000AE3F07 /* UIKit.framework in Frameworks */,
 				A4978FB81EE7E4EF00AE3F07 /* CFNetwork.framework in Frameworks */,
 				81D647741D2CA78800690609 /* Security.framework in Frameworks */,
