@@ -18,7 +18,6 @@ before_install:
   elif [ "$TEST_TYPE" = Carthage ]; then
     brew update
     brew install carthage || brew upgrade carthage
-  fi
   elif [ "$TEST_TYPE" = CocoaPods ]; then
     gem install cocoapods
   fi
