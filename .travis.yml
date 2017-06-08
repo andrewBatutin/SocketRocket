@@ -30,7 +30,7 @@ script:
 - |
   if [ "$TEST_TYPE" = iOS ]; then
     set -o pipefail
-    xcodebuild -project SocketRocket.xcodeproj -scheme "SocketRocket-iOS" -sdk iphonesimulator build test
+    xcodebuild -project SocketRocket.xcodeproj -scheme "SocketRocket-iOS" -sdk iphonesimulator build
   elif [ "$TEST_TYPE" = OSX ]; then
     set -o pipefail
     xcodebuild -project SocketRocket.xcodeproj -scheme "SocketRocket-macOS" -sdk macosx build | xcpretty -c
